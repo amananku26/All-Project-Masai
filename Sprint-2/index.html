@@ -1,11 +1,58 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sprint-2</title>
+    <link rel="stylesheet" href="style.css">
+
+
 </head>
+
 <body>
-    
+    <h1 class="em">Expense Manager</h1>
+    <div class="data-box">
+        <div> <label class="head" for="income">Enter Income Amount  &#8595</label>
+            <input class="edit" id="name" type="number" placeholder="Enter Income Money" /></div>
+        <div>
+            <label class="head" for="spent">Select Source  &#8595</label><br>
+            <select id="income1">
+                <option value="option1">Select</option>
+                <option value="option2">Income</option>
+                <option value="option3">Intrest</option>
+                <option value="option4">Other</option>
+              </select>
+        </div>
+        <div>
+            <button class="submit " onclick="myFunction()">Submit</button></div>
+        <div> <label class="head" for="spent">Enter Spent Amount  &#8595</label> <br>
+            <input class="edit" id="name" type="number" placeholder="Enter Spent Money" /></div>
+        <div>
+            <label class="head" for="spent">Select Source  &#8595</label><br>
+            <select id="spent">
+                <option value="option5">Select</option>
+                <option value="option6">Food</option>
+                <option value="option7">Rent</option>
+                <option value="option8">Household</option>
+                <option value="option9">ELectricity</option>
+                <option value="option10">Maintainence</option>
+                <option value="option11">other</option>
+              </select>
+        </div>
+        <div><button class="submit " onclick="myFunction()">Submit</button></div>
+
+    </div>
+    <div class="table">
+        <div id="res1" class="edit1"></div>
+        <div id="res2" class="edit1"></div>
+        <div id="res3" class="edit1"></div>
+        <div id="res4" class="edit1"></div>
+        <div id="res5" class="edit1"></div>
+        <div id="total"></div>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
