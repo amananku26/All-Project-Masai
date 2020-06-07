@@ -8,6 +8,30 @@ body {
     padding: 1%;
 }
 
+.total_value {
+    margin-top: 5px;
+    margin-left: 125px;
+    width: 190px;
+    padding: 2%;
+    border-radius: 10px;
+    border: 1px dashed cyan;
+}
+
+#total-amount {
+    margin-top: 15px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.fl-left {
+    float: left;
+}
+
+.fl-left1 {
+    float: left;
+    margin-left: 15px;
+}
+
 .data-box {
     border: 1px solid turquoise;
     height: 35%;
@@ -110,6 +134,45 @@ body {
     margin-top: 10px;
     animation-name: test;
     animation-duration: 60s;
+}
+
+
+/* hr */
+
+.hr {
+    height: 5px;
+    background-color: rgb(38, 80, 80);
+    margin-top: 5px;
+    border: none;
+}
+
+.hr-data {
+    width: 80px;
+}
+
+
+/* income records */
+
+#income-record {
+    border-radius: 5px;
+    border: 2px solid cyan;
+    margin-top: 10px;
+    float: left;
+    grid-gap: 10px;
+}
+
+
+/* grid box for income source */
+
+.grid-box1 {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: auto;
+}
+
+.grid-box1 div {
+    border: 1px solid cyan;
 }
 
 @keyframes test {
