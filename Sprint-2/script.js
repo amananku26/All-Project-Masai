@@ -56,22 +56,25 @@ function IncomeSpentEntry() {
 
 function total() {
     var sum = 0
+    var count = 0
 
+
+
+    for (var j = 0; j < arr1.length; j++) {
+        count = count + arr1[j]
+
+    }
     for (var i = 0; i < arr.length; i++) {
         sum = sum + arr[i]
     }
     console.log(sum)
-
-    var count = 0
-    for (var j = 0; j < arr1.length; j++) {
-        count = count + arr[j]
-    }
     console.log(count)
     var showTotal = sum - count
     console.log(showTotal)
-
-    if (showTotal <= 0) {
-        var out = "YOUR SPENT IS MORE THEN INCOME"
+    if (showTotal == 0) {
+        var out = "ZERO BALANCE"
+    } else if (showTotal < 0) {
+        out = "YOUR SPENT IS MORE THEN INCOME"
     } else if (showTotal > 0 && showTotal < 5000) {
         out = "BALANCE IS LOW:.. " + showTotal
     } else if (showTotal >= 5000) {

@@ -23,6 +23,9 @@ body {
     font-weight: bolder;
 }
 
+
+/* data box */
+
 .fl-left {
     float: left;
 }
@@ -156,7 +159,7 @@ body {
 #income-record {
     border-radius: 5px;
     border: 2px solid cyan;
-    margin-top: 10px;
+    margin-top: 0px;
     float: left;
     grid-gap: 10px;
 }
@@ -191,18 +194,60 @@ body {
 }
 
 @media screen and (max-width: 950px) {
-    .data-box {
-        display: grid;
-        grid-template-columns: 10%;
-        grid-template-rows: 20%;
-        padding-top: none;
-        height: 40%;
-        background-color: bisque;
+    body {
+        margin: 0px;
+        padding: 0px;
+    }
+    /* .img1 {
+        display: none;
     }
     .head {
-        visibility: hidden;
+        display: none;
+    } */
+    .data-box {
+        border: 1px solid turquoise;
+        height: 60%;
+        width: 100%;
+        grid-gap: 5px;
+        padding-top: 0px;
+        padding-left: 0px;
+        background-color: turquoise;
+        display: grid;
+        grid-template-columns: 60%;
+        grid-template-rows: 59px 59px 59px;
+        float: left;
     }
     .submit {
+        padding: 3%;
         width: 100%;
+        border: none;
+        margin-top: 0px;
+        margin-left: 0px;
+        animation-name: test;
+        animation-duration: 60s;
+        float: left;
     }
+    .submit2 {
+        padding: 3%;
+        width: 100%;
+        border: none;
+        margin-top: 0px;
+        animation-name: test;
+        animation-duration: 60s;
+    }
+    #incomeAmountValues {
+        margin-top: 15px;
+    }
+    /* .item1 {
+        grid-area: 2 / 1 / span 1 / span 2
+    }
+    .item3 {
+        grid-area: 1 / 1 / span 1 / span 2
+    }
+    /* .item3 {
+        grid-area: 3 / 1 / span 1 / span 3
+    } */
+    /* .item4 {
+        grid-area: 4 / 1 / span 4 / span 2
+    } */
 }
